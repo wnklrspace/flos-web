@@ -58,7 +58,7 @@ const SongList: FC = () => {
 					type='p'
 					size='landing'
 					weight='bold'>
-					(can't) keep up
+					can (not) keep up
 				</Text>
 			</li>
 			<li>
