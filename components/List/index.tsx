@@ -10,7 +10,7 @@ const List: FC = () => {
 					type='p'
 					size='landing'
 					weight='bold'>
-					What a shitty day for work, what a great day to walk
+					flo does not (yet) exist
 				</Text>
 			</li>
 		</Container>
