@@ -3,6 +3,7 @@ import { FC } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import Text from '../Base/Text';
+import theme from '../../theme';
 
 interface Props {}
 
@@ -64,7 +65,15 @@ const Container = styled.nav`
 	align-items: center;
 	justify-content: space-between;
 
-	padding: 0 4rem;
+	padding: 0 1rem;
+
+	${theme.breakpoints.m} {
+		padding: 0 2rem;
+	}
+
+	${theme.breakpoints.l} {
+		padding: 0 4rem;
+	}
 `;
 
 const List = styled.ul`

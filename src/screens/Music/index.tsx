@@ -1,9 +1,8 @@
 'use client';
 import styled from 'styled-components';
-
 import Events from '../../../components/Events';
-import SongList from '../../../components/List/SongList';
 import Player from '../../../components/Player';
+import theme from '../../../theme';
 
 const Music = () => {
 	return (
@@ -22,8 +21,16 @@ const Container = styled.main`
 `;
 
 const Inner = styled.div`
-	padding: 0 4rem;
 	margin: 0 auto;
+	padding: 0 1rem;
+
+	${theme.breakpoints.m} {
+		padding: 0 2rem;
+	}
+
+	${theme.breakpoints.l} {
+		padding: 0 4rem;
+	}
 `;
 
 export default Music;

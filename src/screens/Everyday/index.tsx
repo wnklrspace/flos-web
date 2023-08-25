@@ -1,7 +1,7 @@
 'use client';
 import styled from 'styled-components';
-
 import List from '../../../components/List';
+import theme from '../../../theme';
 
 const Everyday = () => {
 	return (
@@ -18,8 +18,16 @@ const Container = styled.main`
 `;
 
 const Inner = styled.div`
-	padding: 0 4rem;
 	margin: 0 auto;
+	padding: 0 1rem;
+
+	${theme.breakpoints.m} {
+		padding: 0 2rem;
+	}
+
+	${theme.breakpoints.l} {
+		padding: 0 4rem;
+	}
 `;
 
 export default Everyday;

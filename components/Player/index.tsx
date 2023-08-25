@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import Song from './Song';
+import theme from '../../theme';
 
 const Player: FC = () => {
 	return (
@@ -26,7 +27,11 @@ const Player: FC = () => {
 const Grid = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2rem;
+	gap: 1rem;
+
+	${theme.breakpoints.m} {
+		gap: 2rem;
+	}
 `;
 
 export default Player;
