@@ -20,7 +20,7 @@ const Navigation: FC<Props> = () => {
 					<Text
 						type='p'
 						size='s'>
-						music, visuals & dailys
+						music & visuals
 					</Text>
 				</Logo>
 			</Link>
@@ -64,8 +64,7 @@ const Container = styled.nav`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
-	padding: 0 1rem;
+	padding: 0 2rem;
 
 	${theme.breakpoints.m} {
 		padding: 0 2rem;

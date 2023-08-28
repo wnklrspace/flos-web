@@ -14,7 +14,11 @@ const Everyday = () => {
 };
 
 const Container = styled.main`
-	padding: 4rem 0 0;
+	padding: 5rem 0 0;
+
+	${theme.breakpoints.m} {
+		padding: 4rem 0 0;
+	}
 `;
 
 const Inner = styled.div`
