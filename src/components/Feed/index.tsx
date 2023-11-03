@@ -1,4 +1,4 @@
-import { DAILY_TYPE, Daily } from '@/types/dailies';
+import { DAILY_TYPE, Daily } from '../../../types/dailies';
 import { FC } from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
