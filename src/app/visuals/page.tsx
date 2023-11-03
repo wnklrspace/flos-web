@@ -1,5 +1,5 @@
 'use client';
-import VisualsScreen from '@/screens/visuals';
+import VisualsScreen from '@/screens/VisualsScreen';
 
 export default function Visuals() {
 	return <VisualsScreen />;
