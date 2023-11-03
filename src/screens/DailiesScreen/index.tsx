@@ -1,6 +1,6 @@
 'use client';
 import { FC } from 'react';
-import { dailies } from '@/content/dailies';
+import { dailies } from '../../../content/dailies';
 import Layout from '@/components/Base/Layout';
 import Feed from '@/components/Feed';
 

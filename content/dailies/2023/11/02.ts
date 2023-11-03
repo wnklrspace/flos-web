@@ -1,5 +1,5 @@
-import { DAILY_TYPE, Daily } from '../../../../../types/dailies';
-import { MEDIA_TYPE } from '../../../../../types/media';
+import { DAILY_TYPE, Daily } from '../../../../types/dailies';
+import { MEDIA_TYPE } from '../../../../types/media';
 
 const Content: Daily = {
 	type: DAILY_TYPE.IMAGE,
