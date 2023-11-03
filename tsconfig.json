@@ -29,8 +29,8 @@
 		"**/*.ts",
 		"**/*.tsx",
 		".next/types/**/*.ts",
-		"src/app/(webseite)/_error.js",
-		"src/app/(webseite)/404.js"
+		"src/app/_error.js",
+		"src/app/404.js"
 	],
 	"exclude": ["node_modules"]
 }
