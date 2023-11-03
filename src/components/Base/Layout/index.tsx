@@ -1,6 +1,6 @@
 'use client';
 import { FC } from 'react';
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 import Header from '@/components/Header';
 import theme from '../../../../theme';
 
