@@ -1,3 +1,4 @@
+'use client';
 import MusicScreen from '@/screens/music';
 
 export default function Music() {
