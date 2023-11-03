@@ -1,39 +1,15 @@
 'use client';
 import { FC } from 'react';
-import styled from 'styled-components';
 import { dailies } from '@/content/dailies';
-import theme from '../../../theme';
+import Layout from '@/components/Base/Layout';
 import Feed from '@/components/Feed';
 
-const Dailies: FC = () => {
+const DailiesScreen: FC = () => {
 	return (
-		<Container>
-			<Inner>
-				<Feed dailies={dailies} />
-			</Inner>
-		</Container>
+		<Layout>
+			<Feed dailies={dailies} />
+		</Layout>
 	);
 };
 
-const Container = styled.main`
-	padding: 5rem 0 0;
-
-	${theme.breakpoints.m} {
-		padding: 4rem 0 0;
-	}
-`;
-
-const Inner = styled.div`
-	margin: 0 auto;
-	padding: 2rem 1rem;
-
-	${theme.breakpoints.m} {
-		padding: 4rem 2rem;
-	}
-
-	${theme.breakpoints.l} {
-		padding: 6rem 4rem;
-	}
-`;
-
-export default Dailies;
+export default DailiesScreen;
