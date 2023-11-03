@@ -6,14 +6,14 @@ import styled from 'styled-components';
 import Text from '@/components/Base/Text';
 import theme from '../../../theme';
 
-const Music = () => {
+const Visuals = () => {
 	return (
 		<Container>
 			<Inner>
 				<Text
 					type='h1'
 					size='l'>
-					music does not (yet) exist. flo does partly exist within{' '}
+					visuals do not (yet) exist. flo does partly exist within{' '}
 					<Link href='/dailies'>
 						<Text
 							type='span'
@@ -49,4 +49,4 @@ const Inner = styled.div`
 	}
 `;
 
-export default Music;
+export default Visuals;

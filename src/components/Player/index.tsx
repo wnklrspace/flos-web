@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import Song from './Song';
-import theme from '../../theme';
+import theme from '../../../theme';
 
 const Player: FC = () => {
 	return (

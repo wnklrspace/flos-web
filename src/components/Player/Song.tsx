@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import Text from '../Base/Text';
-import theme from '../../theme';
+import theme from '../../../theme';
 
 interface Props {
 	title: string;

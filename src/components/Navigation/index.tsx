@@ -1,13 +1,20 @@
 'use client';
 import { FC } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import styled from 'styled-components';
 import Text from '../Base/Text';
-import theme from '../../theme';
+import theme from '../../../theme';
 
-interface Props {}
+const Navigation: FC = () => {
+	const pathname = usePathname();
+	const routeIsActive = (route: string) => {
+		if (typeof window !== 'undefined') {
+			return pathname === route;
+		}
+		return false;
+	};
 
-const Navigation: FC<Props> = () => {
 	return (
 		<Container>
 			<Link href='/'>
@@ -15,7 +22,7 @@ const Navigation: FC<Props> = () => {
 					<Text
 						type='p'
 						size='s'>
-						flo
+						flo.fyi
 					</Text>
 					<Text
 						type='p'
@@ -24,8 +31,9 @@ const Navigation: FC<Props> = () => {
 					</Text>
 				</Logo>
 			</Link>
+
 			<List>
-				<li>
+				<ListItem isActive={routeIsActive('/music')}>
 					<Link href='/music'>
 						<Text
 							type='p'
@@ -33,8 +41,8 @@ const Navigation: FC<Props> = () => {
 							MUSIC
 						</Text>
 					</Link>
-				</li>
-				<li>
+				</ListItem>
+				<ListItem isActive={routeIsActive('/visuals')}>
 					<Link href='/visuals'>
 						<Text
 							type='p'
@@ -42,18 +50,18 @@ const Navigation: FC<Props> = () => {
 							VISUALS
 						</Text>
 					</Link>
-				</li>
+				</ListItem>
 			</List>
 			<List>
-				<li>
-					<Link href='/dailys'>
+				<ListItem isActive={routeIsActive('/dailies')}>
+					<Link href='/dailies'>
 						<Text
 							type='p'
 							size='s'>
-							DAILYS
+							DAILIES
 						</Text>
 					</Link>
-				</li>
+				</ListItem>
 			</List>
 		</Container>
 	);
@@ -79,6 +87,23 @@ const List = styled.ul`
 	list-style: none;
 	display: flex;
 	gap: 2rem;
+`;
+
+const ListItem = styled.li<{ isActive: boolean }>`
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -0.75rem;
+		left: 50%;
+		width: 0.5rem;
+		height: 0.5rem;
+		border-radius: 50%;
+		background-color: ${({ isActive }) =>
+			isActive ? theme.colors.red : 'transparent'};
+		transition: background-color 0.2s ease-in-out;
+	}
 `;
 
 const Logo = styled.div`

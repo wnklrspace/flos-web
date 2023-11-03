@@ -1,5 +1,5 @@
-import EverydayScreen from '../../screens/Everyday';
+import MusicScreen from '../../screens/music';
 
 export default function Music() {
-	return <EverydayScreen />;
+	return <MusicScreen />;
 }

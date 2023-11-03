@@ -3,7 +3,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 
 import Navigation from '../Navigation';
-import theme from '../../theme';
+import theme from '../../../theme';
 
 interface Props {}
 

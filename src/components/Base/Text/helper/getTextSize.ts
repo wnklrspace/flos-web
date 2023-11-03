@@ -1,4 +1,4 @@
-import theme from '../../../../theme';
+import theme from '../../../../../theme';
 import { SizeTypes } from '../Types';
 
 function getTextSize(size: SizeTypes) {

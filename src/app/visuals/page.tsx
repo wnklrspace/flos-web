@@ -1,5 +1,5 @@
-import EverydayScreen from '../../screens/Everyday';
+import VisualsScreen from '../../screens/visuals';
 
-export default function Diary() {
-	return <EverydayScreen />;
+export default function Visuals() {
+	return <VisualsScreen />;
 }

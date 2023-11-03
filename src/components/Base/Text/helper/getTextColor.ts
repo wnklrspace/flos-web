@@ -1,4 +1,4 @@
-import theme from '../../../../theme';
+import theme from '../../../../../theme';
 import { TextColorTypes } from '../Types';
 
 function getTextColor(textColor: TextColorTypes, hasHoverEffect: boolean) {

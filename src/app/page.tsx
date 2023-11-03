@@ -1,5 +1,5 @@
-import EverydayScreen from '../screens/Everyday';
+import HomeScreen from '../screens/home';
 
 export default function Home() {
-	return <EverydayScreen />;
+	return <HomeScreen />;
 }

@@ -34,33 +34,7 @@ const theme = {
 		black: 'var(--color-black)',
 		darkGray: 'var(--color-gray-dark)',
 		gray: 'var(--color-gray)',
-		yellow: {
-			100: 'var(--color-yellow-100)',
-			125: 'var(--color-yellow-125)',
-		},
-		blue: {
-			100: 'var(--color-blue-100)',
-			125: 'var(--color-blue-125)',
-		},
-		darkBlue: {
-			100: 'var(--color-darkblue-100)',
-			125: 'var(--color-darkblue-125)',
-		},
-		orange: {
-			100: 'var(--color-orange-100)',
-			125: 'var(--color-orange-125)',
-		},
-		green: {
-			100: 'var(--color-green-100)',
-			125: 'var(--color-green-125)',
-		},
-		red: {
-			125: 'var(--color-red-125)',
-			100: 'var(--color-red-100)',
-			75: 'var(--color-red-75)',
-			50: 'var(--color-red-50)',
-			25: 'var(--color-red-25)',
-		},
+		red: 'var(--color-red)',
 	},
 };
 

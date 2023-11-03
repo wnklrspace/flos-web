@@ -1,13 +1,14 @@
 'use client';
 import styled from 'styled-components';
-import List from '../../../components/List';
+import { dailies } from '@/content/dailies';
 import theme from '../../../theme';
+import Feed from '@/components/Feed';
 
-const Everyday = () => {
+const Dailies = () => {
 	return (
 		<Container>
 			<Inner>
-				<List />
+				<Feed dailies={dailies} />
 			</Inner>
 		</Container>
 	);
@@ -23,15 +24,15 @@ const Container = styled.main`
 
 const Inner = styled.div`
 	margin: 0 auto;
-	padding: 0 1rem;
+	padding: 2rem 1rem;
 
 	${theme.breakpoints.m} {
-		padding: 0 2rem;
+		padding: 4rem 2rem;
 	}
 
 	${theme.breakpoints.l} {
-		padding: 0 4rem;
+		padding: 6rem 4rem;
 	}
 `;
 
-export default Everyday;
+export default Dailies;
