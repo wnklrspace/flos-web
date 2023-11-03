@@ -1,4 +1,4 @@
-import MusicScreen from '../../screens/music';
+import MusicScreen from '@/screens/music';
 
 export default function Music() {
 	return <MusicScreen />;
