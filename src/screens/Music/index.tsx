@@ -1,8 +1,6 @@
 'use client';
 import Link from 'next/link';
 import styled from 'styled-components';
-// import Events from '../../components/Events';
-// import Player from '../../components/Player';
 import Text from '@/components/Base/Text';
 import theme from '../../../theme';
 
@@ -25,8 +23,6 @@ const Music = () => {
 					</Link>
 					.
 				</Text>
-				{/* <Player />
-				<Events /> */}
 			</Inner>
 		</Container>
 	);
