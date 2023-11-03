@@ -1,10 +1,11 @@
 'use client';
+import { FC } from 'react';
 import styled from 'styled-components';
 import { dailies } from '@/content/dailies';
 import theme from '../../../theme';
 import Feed from '@/components/Feed';
 
-const Dailies = () => {
+const Dailies: FC = () => {
 	return (
 		<Container>
 			<Inner>

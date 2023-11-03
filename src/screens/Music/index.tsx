@@ -1,10 +1,11 @@
 'use client';
+import { FC } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import Text from '@/components/Base/Text';
 import theme from '../../../theme';
 
-const Music = () => {
+const Music: FC = () => {
 	return (
 		<Container>
 			<Inner>

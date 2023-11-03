@@ -1,10 +1,11 @@
 'use client';
+import { FC } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import theme from '../../../theme';
 import Text from '@/components/Base/Text';
 
-const Home = () => {
+const Home: FC = () => {
 	return (
 		<Container>
 			<Inner>

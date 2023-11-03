@@ -1,12 +1,11 @@
 'use client';
+import { FC } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
-// import Events from '../../components/Events';
-// import Player from '../../components/Player';
 import Text from '@/components/Base/Text';
 import theme from '../../../theme';
 
-const Visuals = () => {
+const Visuals: FC = () => {
 	return (
 		<Container>
 			<Inner>
@@ -25,8 +24,6 @@ const Visuals = () => {
 					</Link>
 					.
 				</Text>
-				{/* <Player />
-				<Events /> */}
 			</Inner>
 		</Container>
 	);
