@@ -24,10 +24,6 @@ export default function StyledComponentsRegistry({
 
 	return (
 		<StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
-			{
-				// @ts-ignore
-				// x-ref:
-			}
 			{children}
 		</StyleSheetManager>
 	);
