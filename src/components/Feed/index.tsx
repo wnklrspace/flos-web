@@ -20,8 +20,9 @@ const Feed: FC<Props> = ({ dailies }) => {
 				type='p'
 				size='xl'
 				lineHeight={1.1}>
-				This is a collection feed of random things, thoughts and ideas. I try to
-				post one every day, but I do not always succeed.
+				This is a collection feed of random things, thoughts, images, drawings,
+				snippets, shorts and ideas. I try to post one every day, but I do not
+				always succeed.
 			</Text>
 			{dailies.map((daily, index) => {
 				switch (daily.type) {
