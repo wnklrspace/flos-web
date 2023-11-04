@@ -23,11 +23,11 @@ const Navigation: FC = () => {
 						size='s'>
 						flo.fyi
 					</Text>
-					<Text
+					{/* <Text
 						type='p'
 						size='s'>
 						music & visuals
-					</Text>
+					</Text> */}
 				</Logo>
 			</Link>
 
