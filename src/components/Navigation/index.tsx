@@ -8,11 +8,10 @@ import theme from '../../../theme';
 
 const Navigation: FC = () => {
 	const pathname = usePathname();
-	const routeIsActive = (route: string) => {
-		if (typeof window !== 'undefined') {
-			return pathname === route;
-		}
-		return false;
+	const isActive = {
+		music: pathname.includes('/music'),
+		visuals: pathname.includes('/visuals'),
+		dailies: pathname.includes('/dailies'),
 	};
 
 	return (
@@ -33,7 +32,7 @@ const Navigation: FC = () => {
 			</Link>
 
 			<List>
-				<ListItem isActive={routeIsActive('/music')}>
+				<ListItem isActive={isActive.music}>
 					<Link href='/music'>
 						<Text
 							type='p'
@@ -42,7 +41,7 @@ const Navigation: FC = () => {
 						</Text>
 					</Link>
 				</ListItem>
-				<ListItem isActive={routeIsActive('/visuals')}>
+				<ListItem isActive={isActive.visuals}>
 					<Link href='/visuals'>
 						<Text
 							type='p'
@@ -53,7 +52,7 @@ const Navigation: FC = () => {
 				</ListItem>
 			</List>
 			<List>
-				<ListItem isActive={routeIsActive('/dailies')}>
+				<ListItem isActive={isActive.dailies}>
 					<Link href='/dailies'>
 						<Text
 							type='p'
