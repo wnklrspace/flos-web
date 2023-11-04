@@ -28,13 +28,15 @@ const Feed: FC<Props> = ({ dailies }) => {
 					case DAILY_TYPE.IMAGE:
 						return (
 							<div key={daily.title + index}>
-								<Image
-									src={daily.media.url}
-									alt={daily.media.alt}
-									width={daily.media.width}
-									height={daily.media.height}
-									layout='responsive'
-								/>
+								<ImageContainer>
+									<Image
+										src={daily.media.url}
+										alt={daily.media.alt}
+										width={daily.media.width}
+										height={daily.media.height}
+										layout='responsive'
+									/>
+								</ImageContainer>
 								<Text
 									type='p'
 									size='l'>
@@ -62,6 +64,17 @@ const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
+`;
+
+const ImageContainer = styled.div`
+	overflow: hidden;
+	margin-bottom: 1rem;
+
+	& > * {
+		width: 100%;
+		height: 100%;
+		border-radius: 1rem;
+	}
 `;
 
 export default Feed;
