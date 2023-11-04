@@ -6,7 +6,7 @@ import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 export default function StyledComponentsRegistry({
 	children,
 }: {
-	children: React.ReactNode;
+	children: any;
 }) {
 	// Only create stylesheet once with lazy initial state
 	// x-ref: https://reactjs.org/docs/hooks-reference.html#lazy-initial-state
