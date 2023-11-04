@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styled from 'styled-components';
 import type {
 	SizeTypes,
@@ -146,25 +145,6 @@ export const P = styled.p<StyledTextComponentProps>`
 `;
 
 export const SPAN = styled.span<StyledTextComponentProps>`
-	${(props) => getTextSize(props.size)}
-	${(props) => getTextWeight(props.weight)}
-	${(props) => getTextTransform(props.transform)}
-	${(props) => getTextAlignment(props.textAlign)}
-	${(props) => getTextColor(props.textColor, props.hasHoverEffect)}
-	${(props) => getTextWhiteSpace(props.whiteSpace)}
-	${(props) => (props.noSpacing ? 'margin: 0;' : '')}
-	${(props) => (props.underline ? 'text-decoration: underline;' : '')}
-	${(props) => props.lineHeight && 'line-height: ' + props.lineHeight}
-	${(props) =>
-		props.hasHoverEffect &&
-		`
-		&:hover {
-			text-decoration: none !important;
-		}
-	`}
-`;
-
-export const LINK = styled(Link)<StyledTextComponentProps>`
 	${(props) => getTextSize(props.size)}
 	${(props) => getTextWeight(props.weight)}
 	${(props) => getTextTransform(props.transform)}
