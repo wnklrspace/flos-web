@@ -7,7 +7,7 @@ const Vegetable: Daily = {
 	description: 'almost 27, almost old vegetable',
 	media: {
 		type: MEDIA_TYPE.IMAGE,
-		url: '/dailies/2023/11/04.jpeg',
+		url: '/dailies/2023/11/05.jpeg',
 		alt: 'Drawing of a mixture between a men and a vegetable.',
 		width: 960,
 		height: 1280,
