@@ -21,6 +21,7 @@ export interface TextComponentProps {
 	textColor?: TextColorTypes;
 	whiteSpace?: WhiteSpaceTypes;
 	lineHeight?: LineHeightTypes;
+	family?: 'sans' | 'mono';
 	noSpacing?: boolean;
 	underline?: boolean;
 	href?: string;
@@ -42,6 +43,7 @@ const Text: FC<TextComponentProps> = ({
 	type,
 	href,
 	hasHoverEffect = false,
+	family = 'sans',
 	onClick,
 	...props
 }) => {
@@ -59,6 +61,7 @@ const Text: FC<TextComponentProps> = ({
 					noSpacing={noSpacing}
 					underline={underline}
 					hasHoverEffect={hasHoverEffect}
+					family={family}
 					onClick={onClick}
 					{...props}>
 					{children}
@@ -77,6 +80,7 @@ const Text: FC<TextComponentProps> = ({
 					noSpacing={noSpacing}
 					underline={underline}
 					hasHoverEffect={hasHoverEffect}
+					family={family}
 					onClick={onClick}
 					{...props}>
 					{children}
@@ -95,6 +99,7 @@ const Text: FC<TextComponentProps> = ({
 					noSpacing={noSpacing}
 					underline={underline}
 					hasHoverEffect={hasHoverEffect}
+					family={family}
 					onClick={onClick}
 					{...props}>
 					{children}
@@ -113,6 +118,7 @@ const Text: FC<TextComponentProps> = ({
 					noSpacing={noSpacing}
 					underline={underline}
 					hasHoverEffect={hasHoverEffect}
+					family={family}
 					onClick={onClick}
 					{...props}>
 					{children}
@@ -131,6 +137,7 @@ const Text: FC<TextComponentProps> = ({
 					noSpacing={noSpacing}
 					underline={underline}
 					hasHoverEffect={hasHoverEffect}
+					family={family}
 					onClick={onClick}
 					{...props}>
 					{children}
@@ -149,6 +156,7 @@ const Text: FC<TextComponentProps> = ({
 					noSpacing={noSpacing}
 					underline={underline}
 					hasHoverEffect={hasHoverEffect}
+					family={family}
 					onClick={onClick}
 					{...props}>
 					{children}
@@ -167,6 +175,7 @@ const Text: FC<TextComponentProps> = ({
 					noSpacing={noSpacing}
 					underline={underline}
 					hasHoverEffect={hasHoverEffect}
+					family={family}
 					onClick={onClick}
 					{...props}>
 					{children}

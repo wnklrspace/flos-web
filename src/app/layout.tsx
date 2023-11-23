@@ -1,8 +1,9 @@
-import { Inter } from 'next/font/google';
+import { Inter, IBM_Plex_Mono } from 'next/font/google';
 import StyledComponentsRegistry from './registry';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
+const ibmPlexMono = IBM_Plex_Mono({ subsets: ['latin'], weight: '400' });
 
 export default function RootLayout({
 	children,
@@ -12,7 +13,9 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={inter.className}>
-				<StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+				<div className={ibmPlexMono.className}>
+					<StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+				</div>
 			</body>
 		</html>
 	);

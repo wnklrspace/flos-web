@@ -50,6 +50,39 @@ const Feed: FC<Props> = ({ dailies }) => {
 								</Text>
 							</div>
 						);
+					case DAILY_TYPE.TEXT:
+						return (
+							<div>
+								<div
+									style={{
+										fontFamily: 'IBM Plex Mono, monospace',
+										backgroundColor: '#fff',
+										padding: '2rem',
+										borderRadius: '1rem',
+										marginBottom: '1rem',
+										display: 'flex',
+										flexDirection: 'column',
+										gap: '1rem',
+									}}>
+									{daily.text.map((sentence, index) => {
+										return (
+											<Text
+												key={sentence + index}
+												type='p'
+												size='l'
+												family='mono'>
+												{sentence}
+											</Text>
+										);
+									})}
+								</div>
+								<Text
+									type='h2'
+									size='l'>
+									{daily.title}
+								</Text>
+							</div>
+						);
 					default:
 						return <>Not implemented</>;
 				}

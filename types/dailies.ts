@@ -7,11 +7,11 @@ enum DAILY_TYPE {
 interface DailyContent {
 	type: DAILY_TYPE;
 	title: string;
-	description: string;
 }
 
 interface DailyImageContent extends DailyContent {
 	type: DAILY_TYPE.IMAGE;
+	description: string;
 	media: {
 		type: 'image';
 		url: string;
@@ -32,7 +32,8 @@ interface DailyRecommendationContent extends DailyContent {
 
 interface DailyTextContent extends DailyContent {
 	type: DAILY_TYPE.TEXT;
-	text: string;
+	text: string[];
+	title: string;
 }
 
 type Daily = DailyImageContent | DailyRecommendationContent | DailyTextContent;
