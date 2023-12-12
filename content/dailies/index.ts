@@ -9,8 +9,10 @@ import Corner from './2023/11/21';
 import WeirdConnection from './2023/11/22';
 import DetachedSelf from './2023/11/23';
 import LikedMessages from './2023/11/24';
+import December from './2023/12';
 
 export const dailies: Daily[] = [
+	...December,
 	LikedMessages,
 	DetachedSelf,
 	WeirdConnection,
