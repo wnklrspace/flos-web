@@ -1,5 +1,5 @@
-import VierzehnTage from './12';
+import VierzehnTageAlternative from './12-alternative';
 
-const December = [VierzehnTage];
+const December = [VierzehnTageAlternative];
 
 export default December;
