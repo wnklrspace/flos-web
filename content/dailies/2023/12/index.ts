@@ -1,4 +1,4 @@
-import WindboeAudio from './27-2';
+import WindboeAudio from './28';
 import AskingToBreak from './27-1';
 import Windboe from './27';
 import PaperThin from './24-1';
