@@ -4,8 +4,8 @@ const Windboe: Daily = {
 	type: DAILY_TYPE.TEXT,
 	text: [
 		'Eine Windboe reißt Bäume um',
-		'Mein Kopf sitzt in der zweiten Reihe nur noch krumm',
-		'Krümmt sich und ich bleibe dabei stumm',
+		'Mein Kopf sitzt in der zweiten Reihe krumm',
+		'Krümmt sich und ich bleibe stumm',
 		'Seitdem du nicht mehr da bist',
 		'Reißt eine Windboe nach der anderen Bäume um',
 	],
