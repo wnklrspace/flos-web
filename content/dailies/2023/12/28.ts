@@ -3,7 +3,7 @@ import { DAILY_TYPE, Daily } from '../../../../types/dailies';
 const WindboeAudio: Daily = {
 	type: DAILY_TYPE.AUDIO,
 	file: '/audio/windboe.mp3',
-	text: 'Windboe (Skit)',
+	text: 'Windböe (Skit)',
 	title: 'Dezember 28, 2023',
 };
 
