@@ -1,4 +1,5 @@
 enum DAILY_TYPE {
+	AUDIO = 'audio',
 	IMAGE = 'image',
 	RECOMMENDATION = 'recommendation',
 	TEXT = 'text',
@@ -36,7 +37,17 @@ interface DailyTextContent extends DailyContent {
 	title: string;
 }
 
-type Daily = DailyImageContent | DailyRecommendationContent | DailyTextContent;
+interface DailyAudioContent extends DailyContent {
+	type: DAILY_TYPE.AUDIO;
+	text: string;
+	file: string;
+}
+
+type Daily =
+	| DailyImageContent
+	| DailyRecommendationContent
+	| DailyTextContent
+	| DailyAudioContent;
 
 export type {
 	Daily,

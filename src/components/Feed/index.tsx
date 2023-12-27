@@ -50,6 +50,28 @@ const Feed: FC<Props> = ({ dailies }) => {
 								</Text>
 							</div>
 						);
+					case DAILY_TYPE.AUDIO:
+						return (
+							<div key={daily.title + index}>
+								<audio controls>
+									<source
+										src={daily.file}
+										type='audio/mp3'
+									/>
+									Your browser does not support the audio element.
+								</audio>
+								<Text
+									type='p'
+									size='l'>
+									Title: {daily.text} <br />
+								</Text>
+								<Text
+									type='h2'
+									size='l'>
+									{daily.title}
+								</Text>
+							</div>
+						);
 					case DAILY_TYPE.TEXT:
 						return (
 							<div>
