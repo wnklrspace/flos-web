@@ -1,4 +1,5 @@
 import { Inter, IBM_Plex_Mono } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 import StyledComponentsRegistry from './registry';
 import './globals.css';
 
@@ -14,7 +15,10 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={inter.className}>
 				<div className={ibmPlexMono.className}>
-					<StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+					<StyledComponentsRegistry>
+						{children}
+						<Analytics />
+					</StyledComponentsRegistry>
 				</div>
 			</body>
 		</html>
