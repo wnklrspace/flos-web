@@ -1,3 +1,4 @@
+import KeineAngst from './30';
 import WindboeAudio from './28';
 import AskingToBreak from './27-1';
 import Windboe from './27';
@@ -7,6 +8,7 @@ import VierzehnTage from './16';
 import VierzehnTageAlternative from './12-alternative';
 
 const December = [
+	KeineAngst,
 	WindboeAudio,
 	AskingToBreak,
 	Windboe,
