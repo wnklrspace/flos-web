@@ -21,7 +21,7 @@ const Feed: FC<Props> = ({ dailies }) => {
 				size='xl'
 				lineHeight={1.1}>
 				This is a collection feed of random things, thoughts, images, drawings,
-				snippets, shorts and ideas.
+				snippets, shorts and ideas
 			</Text>
 			{dailies.map((daily, index) => {
 				switch (daily.type) {
