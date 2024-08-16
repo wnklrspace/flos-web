@@ -5,7 +5,6 @@ import LikedMessages from './24';
 import Burning from './17';
 import Poem from './10';
 import USO from './09';
-import Vegetable from './05';
 import Slipped from './04';
 import ShadesOfFeeling from './03';
 
@@ -17,7 +16,6 @@ const November = [
 	Burning,
 	Poem,
 	USO,
-	Vegetable,
 	Slipped,
 	ShadesOfFeeling,
 ];

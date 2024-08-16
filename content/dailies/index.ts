@@ -1,6 +1,4 @@
 import { Daily } from '../../types/dailies';
-import November from './2023/11';
-import December from './2023/12';
-import January from './2024/01';
+import August from './2024/08';
 
-export const dailies: Daily[] = [...January, ...December, ...November];
+export const dailies: Daily[] = [...August];

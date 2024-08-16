@@ -23,36 +23,11 @@ const Navigation: FC = () => {
 						size='s'>
 						flo.fyi
 					</Text>
-					{/* <Text
-						type='p'
-						size='s'>
-						music & visuals
-					</Text> */}
 				</Logo>
 			</Link>
 
 			<List>
-				<ListItem isActive={isActive.music}>
-					<Link href='/music'>
-						<Text
-							type='p'
-							size='s'>
-							MUSIC
-						</Text>
-					</Link>
-				</ListItem>
-				<ListItem isActive={isActive.visuals}>
-					<Link href='/visuals'>
-						<Text
-							type='p'
-							size='s'>
-							VISUALS
-						</Text>
-					</Link>
-				</ListItem>
-			</List>
-			<List>
-				<ListItem isActive={isActive.dailies}>
+				<ListItem isActive={true}>
 					<Link href='/dailies'>
 						<Text
 							type='p'

@@ -1,5 +1,5 @@
 import { Metadata, NextPage } from 'next';
-import HomeScreen from '@/screens/HomeScreen';
+import DailiesScreen from '@/screens/DailiesScreen';
 
 export const metadata: Metadata = {
 	title: 'Flo does partly exist',
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const Home: NextPage = () => {
-	return <HomeScreen />;
+	return <DailiesScreen />;
 };
 
 export default Home;
