@@ -14,7 +14,8 @@ const Begegnungen: Daily = {
 const BegegnungenVisual: Daily = {
 	type: DAILY_TYPE.IMAGE,
 	title: 'August 16, 2024',
-	description: 'confusion on canvas',
+	description:
+		'"weil wir uns nicht kennen, aber schön, dass es uns beiden so geht" on canvas',
 	media: {
 		type: MEDIA_TYPE.IMAGE,
 		url: '/dailies/2024/08/begegnungen.jpg',
