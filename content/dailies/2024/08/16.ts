@@ -15,7 +15,7 @@ const BegegnungenVisual: Daily = {
 	type: DAILY_TYPE.IMAGE,
 	title: 'August 16, 2024',
 	description:
-		'"weil wir uns nicht kennen, aber schön, dass es uns beiden so geht" on canvas',
+		'"weil wir uns nicht kennen, aber schön, dass es uns beiden so geht" on a digital canvas',
 	media: {
 		type: MEDIA_TYPE.IMAGE,
 		url: '/dailies/2024/08/begegnungen.jpg',
