@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import styled from 'styled-components';
 import Text from '../Base/Text';
 import theme from '../../../theme';
+import Hide from '../Hide';
 
 const Navigation: FC = () => {
 	const pathname = usePathname();
@@ -12,6 +13,7 @@ const Navigation: FC = () => {
 		music: pathname.includes('/music'),
 		visuals: pathname.includes('/visuals'),
 		dailies: pathname.includes('/dailies'),
+		words: pathname.includes('/words'),
 	};
 
 	return (
@@ -21,13 +23,37 @@ const Navigation: FC = () => {
 					<Text
 						type='p'
 						size='s'>
-						flo.fyi
+						f
+						<Hide>
+							<Text
+								type='span'
+								size='s'>
+								lo.
+							</Text>
+						</Hide>
+						f
+						<Hide>
+							<Text
+								type='span'
+								size='s'>
+								yi
+							</Text>
+						</Hide>
 					</Text>
 				</Logo>
 			</Link>
 
-			<List>
-				<ListItem isActive={true}>
+			{/* <List>
+				<ListItem isActive={isActive.words}>
+					<Link href='/words'>
+						<Text
+							type='p'
+							size='s'>
+							WORDS
+						</Text>
+					</Link>
+				</ListItem>
+				<ListItem isActive={isActive.dailies}>
 					<Link href='/dailies'>
 						<Text
 							type='p'
@@ -36,7 +62,7 @@ const Navigation: FC = () => {
 						</Text>
 					</Link>
 				</ListItem>
-			</List>
+			</List> */}
 		</Container>
 	);
 };

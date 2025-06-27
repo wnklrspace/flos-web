@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Layout from '@/components/Base/Layout';
 import Text from '@/components/Base/Text';
 
-const VisualsScreen: FC = () => {
+const WordsScreen: FC = () => {
 	return (
 		<Layout>
 			<Text
@@ -26,4 +26,4 @@ const VisualsScreen: FC = () => {
 	);
 };
 
-export default VisualsScreen;
+export default WordsScreen;
