@@ -1,10 +1,7 @@
-import { Inter, IBM_Plex_Mono } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import StyledComponentsRegistry from './registry';
+import Header from '@/components/Header';
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
-const ibmPlexMono = IBM_Plex_Mono({ subsets: ['latin'], weight: '400' });
 
 export default function RootLayout({
 	children,
@@ -12,15 +9,14 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en'>
-			<body className={inter.className}>
-				<div className={ibmPlexMono.className}>
-					<StyledComponentsRegistry>
-						{children}
-						<Analytics />
-					</StyledComponentsRegistry>
-				</div>
-			</body>
-		</html>
+		<StyledComponentsRegistry>
+			<html lang='en'>
+				<body>
+					<Header />
+					<main>{children}</main>
+				</body>
+			</html>
+			<Analytics />
+		</StyledComponentsRegistry>
 	);
 }
