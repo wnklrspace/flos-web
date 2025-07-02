@@ -99,7 +99,7 @@ const Feed: FC = () => {
 };
 
 const Container = styled.div`
-	padding: 4rem;
+	padding: calc(40dvh + 2rem) 4rem 2rem;
 
 	display: grid;
 	grid-template-columns: repeat(3, minmax(20rem, 1fr));
