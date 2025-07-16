@@ -43,7 +43,7 @@ export const H1 = styled.h1<StyledTextComponentProps>`
 	${(props) => (props.underline ? 'text-decoration: underline;' : '')}
 	${(props) =>
 		props.family === 'sans'
-			? 'font-family: "Inter", sans-serif;'
+			? 'font-family: "Gambarino-Regular", serif;'
 			: 'font-family: "IBM Plex Mono", monospace;'}
 	${(props) =>
 		props.hasHoverEffect &&
@@ -66,7 +66,7 @@ export const H2 = styled.h2<StyledTextComponentProps>`
 	${(props) => (props.underline ? 'text-decoration: underline;' : '')}
 	${(props) =>
 		props.family === 'sans'
-			? 'font-family: "Inter", sans-serif;'
+			? 'font-family: "Gambarino-Regular", serif;'
 			: 'font-family: "IBM Plex Mono", monospace;'}
 	${(props) =>
 		props.hasHoverEffect &&
@@ -89,7 +89,7 @@ export const H3 = styled.h3<StyledTextComponentProps>`
 	${(props) => props.lineHeight && 'line-height: ' + props.lineHeight}
 	${(props) =>
 		props.family === 'sans'
-			? 'font-family: "Inter", sans-serif;'
+			? 'font-family: "Gambarino-Regular", serif;'
 			: 'font-family: "IBM Plex Mono", monospace;'}
 	${(props) =>
 		props.hasHoverEffect &&
@@ -112,7 +112,7 @@ export const H4 = styled.h4<StyledTextComponentProps>`
 	${(props) => props.lineHeight && 'line-height: ' + props.lineHeight}
 	${(props) =>
 		props.family === 'sans'
-			? 'font-family: "Inter", sans-serif;'
+			? 'font-family: "Gambarino-Regular", serif;'
 			: 'font-family: "IBM Plex Mono", monospace;'}
 	${(props) =>
 		props.hasHoverEffect &&
@@ -135,7 +135,7 @@ export const H5 = styled.h5<StyledTextComponentProps>`
 	${(props) => props.lineHeight && 'line-height: ' + props.lineHeight}
 	${(props) =>
 		props.family === 'sans'
-			? 'font-family: "Inter", sans-serif;'
+			? 'font-family: "Gambarino-Regular", serif;'
 			: 'font-family: "IBM Plex Mono", monospace;'}
 	${(props) =>
 		props.hasHoverEffect &&
@@ -158,7 +158,7 @@ export const P = styled.p<StyledTextComponentProps>`
 	${(props) => props.lineHeight && 'line-height: ' + props.lineHeight}
 	${(props) =>
 		props.family === 'sans'
-			? 'font-family: "Inter", sans-serif;'
+			? 'font-family: "Gambarino-Regular", serif;'
 			: 'font-family: "IBM Plex Mono", monospace;'}
 	${(props) =>
 		props.hasHoverEffect &&
@@ -181,7 +181,7 @@ export const SPAN = styled.span<StyledTextComponentProps>`
 	${(props) => props.lineHeight && 'line-height: ' + props.lineHeight}
 	${(props) =>
 		props.family === 'sans'
-			? 'font-family: "Inter", sans-serif;'
+			? 'font-family: "Gambarino-Regular", serif;'
 			: 'font-family: "IBM Plex Mono", monospace;'}
 	${(props) =>
 		props.hasHoverEffect &&

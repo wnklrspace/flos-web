@@ -19,7 +19,7 @@ const Feed: FC<Props> = ({ dailies }) => {
 			<Text
 				type='p'
 				size='xl'
-				lineHeight={1.1}>
+				lineHeight={1}>
 				This is a collection feed of random things, thoughts, images, drawings,
 				snippets, shorts and ideas
 			</Text>
