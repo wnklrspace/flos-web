@@ -52,6 +52,7 @@ type Daily =
 export type {
 	Daily,
 	DailyContent,
+	DailyAudioContent,
 	DailyImageContent,
 	DailyRecommendationContent,
 	DailyTextContent,

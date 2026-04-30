@@ -1,28 +1,51 @@
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	font-family: 'Inter', sans-serif;
-	font-size: 62.5%;
+@import "tailwindcss";
+
+@theme {
+  /* Breakpoints */
+  --breakpoint-xs: 380px;
+  --breakpoint-s: 576px;
+  --breakpoint-m: 768px;
+  --breakpoint-l: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+  --breakpoint-xxxl: 1640px;
+
+  /* Font sizes */
+  --font-size-f-xxxl: 7.2rem;
+  --font-size-f-xxl: 4.8rem;
+  --font-size-f-xl: 3.2rem;
+  --font-size-f-l: 1.8rem;
+  --font-size-f-m: 1.4rem;
+  --font-size-f-s: 1.2rem;
+  --font-size-f-xs: 1rem;
+  --font-size-f-xxs: 0.8rem;
+
+  /* Colors */
+  --color-c-black: #222;
+  --color-c-white: #fff;
+  --color-c-gray-dark: #777;
+  --color-c-gray: #eee;
+  --color-c-red: #df5151;
+
+  /* Font families */
+  --font-family-sans: "Inter", sans-serif;
+  --font-family-mono: "IBM Plex Mono", monospace;
 }
 
-:root {
-	--color-black: #222;
-	--color-white: #fff;
-	--color-gray-dark: #777;
-	--color-gray: #eee;
-	--color-red: #df5151;
-}
+@layer base {
+  * {
+    font-family: var(--font-family-sans);
+  }
 
-html,
-body {
-	max-width: 100vw;
-	overflow-x: hidden;
-	/* background-color: #fff3db; */
-	background-color: #e4e4e7;
-}
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: #e4e4e7;
+  }
 
-a {
-	text-decoration: none;
-	color: inherit;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
