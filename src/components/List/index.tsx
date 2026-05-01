@@ -1,24 +1,13 @@
-import { FC } from 'react';
-import Text from '../Base/Text';
-import styled from 'styled-components';
+import { FC } from "react";
 
 const List: FC = () => {
-	return (
-		<Container>
-			<li>
-				<Text
-					type='p'
-					size='landing'
-					weight='bold'>
-					flo does not (yet) exist
-				</Text>
-			</li>
-		</Container>
-	);
+  return (
+    <div>
+      <li>
+        <p className="text-xl">flo does not (yet) exist</p>
+      </li>
+    </div>
+  );
 };
-
-const Container = styled.ul`
-	list-style: none;
-`;
 
 export default List;
