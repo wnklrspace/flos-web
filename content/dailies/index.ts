@@ -3,9 +3,6 @@ import { Daily } from "../../types/dailies";
 // 2025/06
 import HeavyAudio from "./2025/06/28";
 
-// 2024/08
-import { BegegnungenVisual } from "./2024/08/16";
-
 // 2024/01
 import Hauchduenn from "./2024/01/04";
 
@@ -21,7 +18,6 @@ import Poem from "./2023/11/10";
 export const dailies: Daily[] = [
   // newest first
   HeavyAudio,
-  BegegnungenVisual,
   Hauchduenn,
   KeineAngst,
   Vibration,
